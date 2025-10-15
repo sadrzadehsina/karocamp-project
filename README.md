@@ -1,1 +1,0 @@
-# Karocamp Project
