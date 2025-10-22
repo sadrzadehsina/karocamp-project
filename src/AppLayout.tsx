@@ -5,7 +5,7 @@ export default function AppLayout() {
   return (
     <div className="flex flex-col h-full">
       <Header />
-      <div className="flex-1 bg-blue-100 p-4">
+      <div className="flex-1 p-4">
         <Outlet />
       </div>
       <Footer />
@@ -24,6 +24,9 @@ function Header() {
       </li>
       <li>
         <NavLink to="/contact">Contact Page</NavLink>
+      </li>
+      <li>
+        <NavLink to="/issue-list">Issue List</NavLink>
       </li>
     </ul>
   );
