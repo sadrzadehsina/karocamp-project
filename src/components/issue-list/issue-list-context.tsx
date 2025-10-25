@@ -15,7 +15,7 @@ export function IssueListContextProvider({
 
   const [query, setQuery] = useState("");
 
-  const [priority, setPriority] = useState("All" as Priority);
+  const [priority, setPriority] = useState("High" as Priority);
 
   const [status, setStatus] = useState("All" as Status);
 
@@ -54,3 +54,8 @@ export const useQuery = () => {
   const { query, setQuery } = useIssueListContext() as ContextType;
   return { query, setQuery };
 };
+
+export const usePriority = () => {
+  const { priority, setPriority } = useIssueListContext() as ContextType;
+  return { priority, setPriority };
+}
