@@ -19,11 +19,11 @@ export function IssueListContextProvider({
 
   const [status, setStatus] = useState("All" as Status);
 
-  useEffect(() => {
-    setIssues(() => {
-      return issues.filter((issue) => issue.title.includes(query));
-    });
-  }, [query]);
+  // useEffect(() => {
+  //   setIssues(() => {
+  //     return issues.filter((issue) => issue.title.includes(query));
+  //   });
+  // }, [query]);
 
   return (
     <IssueListContext.Provider
@@ -59,3 +59,5 @@ export const usePriority = () => {
   const { priority, setPriority } = useIssueListContext() as ContextType;
   return { priority, setPriority };
 }
+
+export default IssueListContext;

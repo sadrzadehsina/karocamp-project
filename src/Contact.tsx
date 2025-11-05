@@ -7,10 +7,7 @@ import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
 
 export default function Contact() {
-  const form = useForm({
-    mode: "onChange",
-    delayError: 5000,
-  });
+  const form = useForm();
 
   const onSubmit = (data) => {
     console.log("log", data);
